@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Serviços{% endblock %}
+
+{% block content %}
+<div class="full-container">
+    <div class="logo-container">
+        <img src="{% static 'images/nome_logo.jpeg' %}" alt="Logo Barbearia">
+    </div>
+    <h2 class="mb-4">Nossos Serviços</h2>
+
+    <div class="container">
+        <div class="row text-center">
+            <!-- Barba -->
+            <div class="col-6 col-sm-4 mb-4">
+                <div class="service-item p-3">
+                    <img src="{% static 'images/barba.png' %}" alt="Barba" class="service-icon">
+                    <h5 class="mt-3">Barba</h5>
+                    <a href="#" class="btn-custom mt-2">Agendar</a>
+                </div>
+            </div>
+
+            <!-- Corte -->
+            <div class="col-6 col-sm-4 mb-4">
+                <div class="service-item p-3">
+                    <img src="{% static 'images/corte.png' %}" alt="Corte de Cabelo" class="service-icon">
+                    <h5 class="mt-3">Corte de Cabelo</h5>
+                    <a href="#" class="btn-custom mt-2">Agendar</a>
+                </div>
+            </div>
+
+            <!-- Hidratação -->
+            <div class="col-6 col-sm-4 mb-4">
+                <div class="service-item p-3">
+                    <img src="{% static 'images/hidratacao.png' %}" alt="Hidratação" class="service-icon">
+                    <h5 class="mt-3">Hidratação</h5>
+                    <a href="#" class="btn-custom mt-2">Agendar</a>
+                </div>
+            </div>
+
+            <!-- Sobrancelha -->
+            <div class="col-6 col-sm-4 mb-4">
+                <div class="service-item p-3">
+                    <img src="{% static 'images/sobrancelha.png' %}" alt="Sobrancelha" class="service-icon">
+                    <h5 class="mt-3">Sobrancelha</h5>
+                    <a href="#" class="btn-custom mt-2">Agendar</a>
+                </div>
+            </div>
+
+            <!-- Tintura -->
+            <div class="col-6 col-sm-4 mb-4">
+                <div class="service-item p-3">
+                    <img src="{% static 'images/tintura.png' %}" alt="Tintura" class="service-icon">
+                    <h5 class="mt-3">Tintura</h5>
+                    <a href="#" class="btn-custom mt-2">Agendar</a>
+                </div>
+            </div>
+
+            <!-- Limpeza de Pele -->
+            <div class="col-6 col-sm-4 mb-4">
+                <div class="service-item p-3">
+                    <img src="{% static 'images/limpeza_pele.png' %}" alt="Limpeza de Pele" class="service-icon">
+                    <h5 class="mt-3">Limpeza de Pele</h5>
+                    <a href="#" class="btn-custom mt-2">Agendar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

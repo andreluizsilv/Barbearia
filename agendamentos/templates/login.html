@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="full-container">
+    <div class="logo-container">
+        <img src="{% static 'images/nome_logo.jpeg' %}" alt="Logo Barbearia">
+    </div>
+    <h2>BarberCare</h2>
+    <form method="post" action="{% url 'agendamentos:login' %}">
+        {% csrf_token %}
+        <input type="text" name="username" id="id_username" class="form-control mb-3" placeholder="E-mail" required>
+        <input type="password" name="password" id="id_password" class="form-control mb-3" placeholder="Senha" required>
+        <button type="submit" class="btn-custom w-100">Acessar</button>
+    </form>
+    <p class="mt-3">Não tem conta?
+        <a href="{% url 'agendamentos:cadastro_cliente' %}" class="text-warning">Criar agora</a>
+    </p>
+</div>
+{% endblock %}
